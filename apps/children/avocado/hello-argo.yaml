@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
-  project: default
+  project: cuvva-avocado
   source:
     path: charts/avocado/hello-argo
     #    helm:
