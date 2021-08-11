@@ -13,7 +13,7 @@ spec:
   source:
     path: charts/hello-argo
     #    helm:
-    repoURL: https://github.com/tgmendes/argo-config
+    repoURL: https://github.com/tgmendes/argo-config-helm
     targetRevision: HEAD
   syncPolicy:
     automated:
