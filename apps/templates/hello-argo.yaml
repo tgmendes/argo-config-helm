@@ -11,10 +11,10 @@ spec:
     namespace: default
   project: default
   source:
-    chart: hello-argo
+    path: charts/hello-argo
     #    helm:
     repoURL: https://github.com/tgmendes/argo-config
-    targetRevision: 1.0.0
+    targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
