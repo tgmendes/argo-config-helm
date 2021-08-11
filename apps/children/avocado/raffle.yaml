@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
-  project: cuvva-avocado
+  project: cuvva-nonprod
   source:
     path: charts/avocado/raffle
     #    helm:

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello-argo
+  name: cuvva-avocado
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: cuvva-nonprod
   source:
-    path: charts/avocado/hello-argo
+    path: apps/children/avocado
     #    helm:
     repoURL: https://github.com/tgmendes/argo-config-helm
     targetRevision: HEAD

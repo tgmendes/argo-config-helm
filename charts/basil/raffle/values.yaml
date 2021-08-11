@@ -1,0 +1,3 @@
+service:
+  name: raffle
+  image: tgmendes/hello-argo:main

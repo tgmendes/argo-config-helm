@@ -9,9 +9,9 @@ spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
-  project: cuvva-avocado
+  project: cuvva-nonprod
   source:
-    path: apps/children/avocado
+    path: apps/children/basil
     #    helm:
     repoURL: https://github.com/tgmendes/argo-config-helm
     targetRevision: HEAD

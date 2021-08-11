@@ -1,17 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: hello-argo
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    server: https://kubernetes.default.svc
     namespace: default
-  project: default
+    server: https://kubernetes.default.svc
+  project: cuvva-nonprod
   source:
-    path: apps/
+    path: charts/basil/hello-argo
+    #    helm:
     repoURL: https://github.com/tgmendes/argo-config-helm
     targetRevision: HEAD
   syncPolicy:
